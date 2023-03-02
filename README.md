@@ -36,6 +36,10 @@ Values ought to be represented as 1.7k or 2.2uF. Do not use other notations than
  - mA milliamp
  - uA microamp
  
+### net naming 
+Net labels serve two purposes: they are used to express a connection in the schemetic between two otherwise unconnected wires and they are used to aid in transparentcy while routing tracks in the layout tool. A track called ```Net-(R2-PAD2)``` is obviously not going to look like it needs special attention, however if we give it a clear name ```feedback``` then it will be immediatly clear to someone routing or inspecting the PCB that this pin is mor eimprotant from a cross talk standpoint than others may be. 
+Therefore the guideance is the give any net which can have a more expressive name a label reguardless of whether this is needed for physical connection or not. 
+ 
  ## layout
  ### 3d models
  It is strongly recommended that all footprints have a 3d model associated with them. Relative paths must be used to reference 3d models.
